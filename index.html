@@ -2,38 +2,63 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мої посилання</title>
-    < style>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            background: linear-gradient(135deg, #4CAF50, #2e7d32);
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
         }
+
         .container {
+            width: 100%;
+            max-width: 420px;
             background: white;
-            padding: 30px;
-            border-radius: 15px;
-            width: 300px;
+            padding: 25px 20px;
+            border-radius: 18px;
             text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
         }
+
         h1 {
-            margin-bottom: 20px;
+            margin: 0 0 20px;
+            font-size: 24px;
         }
-        a {
-            display: block;
-            margin: 10px 0;
-            padding: 12px;
+
+        a.button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 55px;
+            margin-bottom: 12px;
             background: #4CAF50;
-            color: white;
+            color: #fff;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 12px;
+            transition: transform 0.1s ease, background 0.2s;
         }
-        a:hover {
+
+        a.button:active {
+            transform: scale(0.97);
             background: #43a047;
+        }
+
+        footer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #777;
         }
     </style>
 </head>
@@ -42,12 +67,33 @@
 <div class="container">
     <h1>Мої посилання</h1>
 
-    <a href="https://www.instagram.com/allure.khm/" target="_blank">Indtagram</a>
-    <a href="https://invite.viber.com/?g=YYYY" target="_blank">Viber група 2</a>
-    <a href="https://www.instagram.com/username/" target="_blank">Instagram</a>
-    <a href="#">Кнопка 4</a>
-    <a href="#">Кнопка 5</a>
-    <a href="#">Кнопка 6</a>
+    <a class="button" href="https://invite.viber.com/?g=XXXX" target="_blank">
+        Viber група 1
+    </a>
+
+    <a class="button" href="https://invite.viber.com/?g=YYYY" target="_blank">
+        Viber група 2
+    </a>
+
+    <a class="button" href="https://www.instagram.com/allure.khm/" target="_blank">
+        Instagram
+    </a>
+
+    <a class="button" href="#">
+        Кнопка 4
+    </a>
+
+    <a class="button" href="#">
+        Кнопка 5
+    </a>
+
+    <a class="button" href="#">
+        Кнопка 6
+    </a>
+
+    <footer>
+        Натискай — відкриється додаток 📱
+    </footer>
 </div>
 
 </body>
