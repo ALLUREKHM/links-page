@@ -15,52 +15,54 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #4CAF50, #2e7d32);
+            background: #000;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            color: #fff;
         }
 
         .container {
             width: 100%;
             max-width: 420px;
-            background: white;
-            padding: 25px 20px;
-            border-radius: 18px;
             text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            padding: 30px 20px;
         }
 
-        h1 {
-            margin: 0 0 20px;
-            font-size: 24px;
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .logo p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: lowercase;
+            opacity: 0.85;
         }
 
         a.button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 55px;
-            margin-bottom: 12px;
-            background: #4CAF50;
-            color: #fff;
+            display: block;
+            margin: 12px 0;
+            padding: 16px;
+            background: #fff;
+            color: #000;
             text-decoration: none;
+            border-radius: 12px;
             font-size: 18px;
             font-weight: bold;
-            border-radius: 12px;
-            transition: transform 0.1s ease, background 0.2s;
         }
 
         a.button:active {
-            transform: scale(0.97);
-            background: #43a047;
-        }
-
-        footer {
-            margin-top: 15px;
-            font-size: 12px;
-            color: #777;
+            opacity: 0.85;
         }
     </style>
 </head>
